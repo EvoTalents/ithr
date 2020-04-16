@@ -1,0 +1,7 @@
+.Filters {
+    display: flex;
+}
+
+.Filter {
+    flex: 1;
+}
