@@ -64,8 +64,8 @@ export const fetchCandidates = ({
   limit = DEFAULT_LIMIT,
   filters: { cities = [], techStack = [] } = { cities: [], techStack: [] },
 }: FetchCandidatesOptions): Promise<CandidatesResponse> => {
-  // const url = new URL(BASE_URL);
-  const url = new URL(BASE_DEV_URL);
+  const url = new URL(BASE_URL);
+  // const url = new URL(BASE_DEV_URL);
 
   if (skip) {
     url.searchParams.append("skip", skip.toString());
