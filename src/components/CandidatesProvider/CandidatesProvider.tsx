@@ -47,7 +47,7 @@ const serializeQS = ({ skip, limit, cities, techStack }: QueryParams) => {
   } else {
     url.searchParams.delete("techStack");
   }
-  return url.search;
+  return `${url.pathname}${url.search}`;
 };
 
 const useCandidatesProvider = (): ICandidatesContext => {
@@ -80,7 +80,6 @@ const useCandidatesProvider = (): ICandidatesContext => {
         if (canceled) {
           return;
         }
-        console.log(response);
         dispatch({
           type: "setCandidates",
           payload: {
