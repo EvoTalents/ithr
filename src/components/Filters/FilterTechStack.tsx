@@ -22,7 +22,7 @@ export const FilterTechStack: React.FunctionComponent<Props> = ({
         options={techStackOptions}
         value={techStack}
         onChange={setTechStack}
-        placeholder="Стек технологий"
+        placeholder="Специализация"
       />
     </div>
   );
