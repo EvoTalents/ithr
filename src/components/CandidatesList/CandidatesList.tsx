@@ -9,7 +9,7 @@ export const CandidatesList: React.FC = () => {
     <table className="table">
       <thead>
         <tr>
-          <th>#</th>
+          <th>ID</th>
           <th>Имя</th>
           <th>Текущая позиция</th>
           <th>Желаемая позиция</th>
